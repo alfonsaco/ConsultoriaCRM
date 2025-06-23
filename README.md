@@ -14,3 +14,17 @@
 1. Clonar el repositorio:
 ```
 git clone https://github.com/alfonsaco/ConsultoriaCRM.git
+```
+
+2. Crea la base de datos en tu servidor MySQL.
+3. Importa la estructura de la base de datos. La encontrarás en un .txt en la carpeta DB dentro del proyecto (database.txt).
+4. Configura el archivo .env con las credenciales y parámetros de conexión a tu base de datos. El archivo debe contener variables como:
+```
+DB_URL=jdbc:mysql://tu_servidor:puerto/tu_base_de_datos
+DB_USER=tu_usuario
+DB_PASS=tu_contraseña
+CLAVE_ENCRIPT=1234567891234567
+```
+La clave del encriptado debe ser 1234567891234567.
+5. Abre el proyecto en tu IDE (Ej: IntelliJ) y ejecuta la aplicación.
+
