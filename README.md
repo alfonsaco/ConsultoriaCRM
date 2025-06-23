@@ -8,7 +8,7 @@ El CRM permite:
 
 - Gestión de usuarios con diferentes roles y permisos.
 
----
+<br>
 
 ## 🚀 Instalación
 
