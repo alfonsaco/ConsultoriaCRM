@@ -2,6 +2,7 @@
 
 **CRM** desarrollado en Java con JavaFX y MySQL, realizado en grupo durante las prácticas de DAM. Permite gestionar usuarios, clientes y tareas con una interfaz sencilla y funcional. El proyecto es educativo y demostrativo, sin referencias a empresas reales, y muestra las habilidades adquiridas en programación y bases de datos.
 
+  <br>
 
 ## 🚀 Instalación
 
@@ -28,7 +29,9 @@ CLAVE_ENCRIPT=1234567891234567
 La clave del encriptado debe ser 1234567891234567.
 5. Abre el proyecto en tu IDE (Ej: IntelliJ) y ejecuta la aplicación.
 
-## Usuarios por defecto
+  <br>
+
+## 🙍‍♂️ Usuarios por defecto
 
 El sistema incluye dos usuarios preconfigurados para facilitar las pruebas y el acceso inicial:
 
