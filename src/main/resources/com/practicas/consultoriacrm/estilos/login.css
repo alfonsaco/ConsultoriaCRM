@@ -1,0 +1,22 @@
+/* ESTILOS PARA LOS TEXTFIELDS */
+.textFields {
+    -fx-border-width: 2px;
+    -fx-border-color: #1b3557;
+    -fx-text-fill: #0C1827;
+    -fx-font-size: 1.2em;
+    -fx-focus-color: transparent;
+}
+
+
+.botonLogin {
+    -fx-background-color: #BDC92E;
+    -fx-text-fill: #0C1827;
+    -fx-background-radius: 0;
+    -fx-font-size: 1.4em;
+    -fx-font-weight: bold;
+    -fx-font-family: Arial;
+    -fx-cursor: HAND;
+}
+.botonLogin:hover {
+    -fx-background-color: #eaf564;
+}

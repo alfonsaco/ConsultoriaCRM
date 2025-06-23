@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
+
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+<AnchorPane prefHeight="800.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.practicas.consultoriacrm.Secciones.SeccionEmpleado">
+   <children>
+      <BorderPane layoutX="200.0" layoutY="100.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <right>
+            <ListView fx:id="listaEmpleados" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+         </right>
+         <bottom>
+            <HBox prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Button fx:id="btnNuevoEmpleado" styleClass="botonGestionarCliente"  mnemonicParsing="false" onAction="#insertarEmpleado" text="" prefHeight="70.0" prefWidth="70.0" >
+                     <graphic>
+                        <ImageView fitHeight="26.0" fitWidth="26.0" pickOnBounds="true" preserveRatio="true">
+                           <Image url="/images/agregar.png" />
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="btnEditarEmpleado" styleClass="botonGestionarCliente"  mnemonicParsing="false" onAction="#editarEmpleado" text="" prefHeight="70.0" prefWidth="70.0" >
+                     <graphic>
+                        <ImageView fitHeight="26.0" fitWidth="26.0" pickOnBounds="true" preserveRatio="true">
+                           <Image url="/images/editar.png" />
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="btnGuardarEmpleado" styleClass="botonGestionarCliente"  mnemonicParsing="false" onAction="#guardarEmpleado" text="" prefHeight="70.0" prefWidth="70.0" >
+                     <graphic>
+                        <ImageView fitHeight="23.0" fitWidth="23.0" pickOnBounds="true" preserveRatio="true">
+                           <Image url="/images/guardar.png" />
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="btnVaciarCamposEmpleado" styleClass="botonGestionarCliente"  mnemonicParsing="false" onAction="#vaciarCampos" text="" prefHeight="70.0" prefWidth="70.0" >
+                     <graphic>
+                        <ImageView fitHeight="23.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                           <Image url="/images/clear.png" />
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="btnEliminarEmpleado" styleClass="botonGestionarCliente"  mnemonicParsing="false" onAction="#eliminarEmpleado" text="" prefHeight="70.0" prefWidth="70.0" >
+                     <graphic>
+                        <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                           <Image url="/images/delete.png" />
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="btnActualizarListaEmpleados" styleClass="botonGestionarCliente"  mnemonicParsing="false" onAction="#actualizarListaEmpleados" text="" prefHeight="70.0" prefWidth="70.0" >
+                     <graphic>
+                        <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                           <Image url="/images/refresh.png" />
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="btnDocs" styleClass="botonGestionarCliente" mnemonicParsing="false" text="" prefHeight="70.0" prefWidth="70.0" >
+                     <graphic>
+                        <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                           <Image url="/images/folder.png" />
+                        </ImageView>
+                     </graphic>
+                  </Button>
+               </children>
+            </HBox>
+         </bottom>
+         <center>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #FFF;" BorderPane.alignment="CENTER">
+               <children>
+                  <TextField fx:id="txtNombreEmpleado" styleClass="textfieldDialogs" layoutX="25.0" layoutY="44.0" prefHeight="25.0" prefWidth="350.0" AnchorPane.leftAnchor="25.0" AnchorPane.rightAnchor="25.0" />
+                  <TextField fx:id="txtDNIEmpleado" styleClass="textfieldDialogs" layoutX="25.0" layoutY="94.0" prefHeight="25.0" prefWidth="350.0" AnchorPane.leftAnchor="25.0" AnchorPane.rightAnchor="25.0" />
+                  <TextField fx:id="txtNumCuentaEmpleado" styleClass="textfieldDialogs" layoutX="25.0" layoutY="194.0" prefHeight="25.0" prefWidth="350.0" AnchorPane.leftAnchor="25.0" AnchorPane.rightAnchor="25.0" />
+
+                  <DatePicker fx:id="datePickerFechaAltaEmpleado" layoutX="25.0" layoutY="144.0" prefHeight="25.0" prefWidth="350.0" AnchorPane.leftAnchor="25.0" AnchorPane.rightAnchor="25.0" />
+                  <TextField fx:id="txtEmailEmpleado" styleClass="textfieldDialogs" layoutX="25.0" layoutY="244.0" prefHeight="25.0" prefWidth="350.0" AnchorPane.leftAnchor="25.0" AnchorPane.rightAnchor="25.0" />
+                  <TextField fx:id="txtTelefonoEmpleado" styleClass="textfieldDialogs" layoutX="25.0" layoutY="294.0" prefHeight="25.0" prefWidth="350.0" AnchorPane.leftAnchor="25.0" AnchorPane.rightAnchor="25.0" />
+
+                  <ComboBox fx:id="comboEmpresaEmpleado" layoutX="25.0" layoutY="344.0" prefWidth="350.0" AnchorPane.leftAnchor="25.0" AnchorPane.rightAnchor="25.0" />
+
+                  <Label layoutX="25.0" layoutY="28.0" text="Nombre:" />
+                  <Label layoutX="25.0" layoutY="77.0" text="DNI:" />
+                  <Label layoutX="25.0" layoutY="127.0" text="Fecha de alta:" />
+                  <Label layoutX="25.0" layoutY="177.0" text="Nº cuenta:" />
+                  <Label layoutX="25.0" layoutY="227.0" text="Email:" />
+                  <Label layoutX="25.0" layoutY="277.0" text="Teléfono personal: " />
+                  <Label layoutX="25.0" layoutY="327.0" text="Empresa: " />
+               </children>
+            </AnchorPane>
+         </center>
+         <top>
+            <HBox alignment="CENTER_LEFT" prefHeight="76.0" prefWidth="600.0" style="-fx-background-color: #0C1827;" BorderPane.alignment="CENTER">
+               <children>
+                  <Region prefHeight="76.0" HBox.hgrow="ALWAYS" />
+               </children>
+            </HBox>
+         </top>
+      </BorderPane>
+   </children>
+</AnchorPane>

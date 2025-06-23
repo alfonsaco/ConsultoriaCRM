@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" prefHeight="400.0" prefWidth="600.0"
+            xmlns="http://javafx.com/javafx/23.0.1" fx:controller="com.practicas.consultoriacrm.LoginController">
+    <BorderPane prefHeight="600.0" prefWidth="900.0" style="-fx-background-color: #0C1827;">
+        <center>
+            <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" spacing="20"
+                  BorderPane.alignment="CENTER">
+                <!--Imagen y texto -->
+                <ImageView fitHeight="150.0" fitWidth="350.0" pickOnBounds="true" preserveRatio="true">
+                    <Image url="/images/logo_medio.png"/>
+                </ImageView>
+
+                <!-- Inputs -->
+                <HBox alignment="CENTER" prefHeight="45.0" prefWidth="200.0">
+                    <HBox alignment="CENTER" prefHeight="45.0" prefWidth="45.0"
+                          style="-fx-background-color: #1b3557;">
+                        <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true"
+                                   preserveRatio="true">
+                            <Image url="/images/user.png"/>
+                        </ImageView>
+                    </HBox>
+                    <TextField fx:id="etxtUsuario" prefHeight="Infinity" prefWidth="300.0"
+                               promptText="Usuario" styleClass="textFields"/>
+                </HBox>
+                <HBox alignment="CENTER" prefHeight="45.0" prefWidth="200.0">
+                    <HBox alignment="CENTER" prefHeight="45.0" prefWidth="45.0"
+                          style="-fx-background-color: #1b3557;">
+                        <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true"
+                                   preserveRatio="true">
+                            <Image url="/images/pass.png"/>
+                        </ImageView>
+                    </HBox>
+                    <PasswordField fx:id="etxtContra" prefHeight="Infinity" prefWidth="300.0"
+                                   promptText="Contraseña" styleClass="textFields"/>
+                </HBox>
+                <Button fx:id="btnIniciarSesion" mnemonicParsing="false" prefHeight="45.0" prefWidth="345.0"
+                        styleClass="botonLogin" text="INICIAR SESIÓN"/>
+            </VBox>
+        </center>
+    </BorderPane>
+</AnchorPane>

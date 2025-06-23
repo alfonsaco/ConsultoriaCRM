@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="640.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.practicas.consultoriacrm.MainScreenController">
+    <BorderPane layoutX="125.0" layoutY="38.0" prefHeight="200.0" prefWidth="678.0" style="-fx-background-color: #616D7C;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <top>
+            <HBox alignment="CENTER_LEFT" prefHeight="76.0" prefWidth="600.0" style="-fx-background-color: #0C1827;" BorderPane.alignment="CENTER">
+                <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                    <HBox.margin>
+                        <Insets left="20.0" />
+                    </HBox.margin>
+                    <Image url="/images/logo_mini.png" />
+                </ImageView>
+                <Region prefHeight="76.0" HBox.hgrow="ALWAYS" />
+            </HBox>
+        </top>
+        <left>
+            <VBox prefHeight="324.0" style="-fx-background-color: #13253B;" BorderPane.alignment="CENTER">
+                <!--  Botones de secciones (Hover) -->
+                <Button fx:id="clientesButton" mnemonicParsing="false" onAction="#clientsButtonClicked" prefHeight="58.0" prefWidth="144.0" styleClass="botonSeccion" text="CLIENTE" />
+                <Button fx:id="listButton" mnemonicParsing="false" onAction="#listButtonClicked" prefHeight="58.0" prefWidth="144.0" styleClass="botonSeccion" text="LISTADO" />
+                <Button fx:id="calendarButton" mnemonicParsing="false" onAction="#calendarButtonClicked" prefHeight="58.0" prefWidth="144.0" styleClass="botonSeccion" text="CALENDARIO" />
+                <Button fx:id="renovacionesButton" mnemonicParsing="false" onAction="#renovationsButtonClicked" prefHeight="58.0" prefWidth="144.0" styleClass="botonSeccion" text="RENOVACIONES" />
+                <Button fx:id="adminButton" mnemonicParsing="false" onAction="#adminButtonClicked" prefHeight="58.0" prefWidth="144.0" styleClass="botonSeccion" text="ADMIN" />
+                <Button fx:id="empleadoButton" mnemonicParsing="false" onAction="#empleadoButtonClicked" prefHeight="58.0" prefWidth="144.0" styleClass="botonSeccion" text="EMPLEADOS" />
+            </VBox>
+        </left>
+        <center>
+            <AnchorPane prefHeight="490.0" prefWidth="590.0" BorderPane.alignment="CENTER">
+                <BorderPane fx:id="clientesPane" layoutY="1.0" prefHeight="478.0" prefWidth="590.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                    <right>
+                        <VBox prefHeight="564.0" prefWidth="265.0" style="-fx-background-color: #0C1827;" BorderPane.alignment="CENTER">
+                            <HBox prefHeight="28.0" prefWidth="207.0">
+                                <TextField fx:id="buscador" prefHeight="28.0" prefWidth="231.0">
+                                    <opaqueInsets>
+                                        <Insets />
+                                    </opaqueInsets>
+                                    <HBox.margin>
+                                        <Insets top="28.0" />
+                                    </HBox.margin>
+                                </TextField>
+                                <Button fx:id="btnVaciarCampoBusqueda" mnemonicParsing="false" prefHeight="31.0" prefWidth="36.0" text="X">
+                                    <HBox.margin>
+                                        <Insets top="28.0" />
+                                    </HBox.margin>
+                                </Button>
+                            </HBox>
+                            <ListView fx:id="lista" prefWidth="265.0" VBox.vgrow="ALWAYS" />
+                        </VBox>
+                    </right>
+                    <center>
+                        <TabPane fx:id="tabPane" prefHeight="200.0" prefWidth="200.0" tabClosingPolicy="UNAVAILABLE" BorderPane.alignment="CENTER">
+                            <!--Tab de Datos-->
+                            <Tab text="Datos">
+                                <fx:include fx:id="tabDatosContainer" source="TabDatos.fxml" />
+                            </Tab>
+                            <!--Tab de Luz-->
+                            <Tab text="Luz">
+                                <!-- ######################### IMPORTANTE QUE EL ID NO COINCIDA CON EL NOMBRE DE LA CLASE ######################### -->
+                                <fx:include fx:id="tabLuzContainer" source="TabLuz.fxml" />
+                            </Tab>
+                            <!--Tab de Gas-->
+                            <Tab text="Gas">
+                                <fx:include fx:id="tabGasContainer" source="TabGas.fxml" />
+                            </Tab>
+                            <!--Tab de Telefonía-->
+                            <Tab text="Telefonía">
+                                <fx:include fx:id="tabTelefoniaContainer" source="TabTelefonia.fxml" />
+                            </Tab>
+                            <!--Tab de Alarmas-->
+                            <Tab text="Alarma">
+                                <fx:include fx:id="tabAlarmasContainer" source="TabAlarmas.fxml" />
+                            </Tab>
+                        </TabPane>
+                    </center>
+                    <bottom>
+                        <HBox alignment="TOP_RIGHT" prefHeight="70.0" prefWidth="347.0" style="-fx-background-color: #182d4a;" BorderPane.alignment="CENTER">
+                            <opaqueInsets>
+                                <Insets />
+                            </opaqueInsets>
+                            <Button fx:id="btnGuardarNuevoCliente" mnemonicParsing="false" prefHeight="70.0" prefWidth="70.0" styleClass="botonGestionarCliente">
+                                <graphic>
+                                    <ImageView fitHeight="26.0" fitWidth="26.0" pickOnBounds="true" preserveRatio="true">
+                                        <Image url="/images/agregar.png" />
+                                    </ImageView>
+                                </graphic>
+                            </Button>
+                            <Button fx:id="btnGuardarCambios" mnemonicParsing="false" prefHeight="70.0" prefWidth="70.0" styleClass="botonGestionarClienteEven">
+                                <graphic>
+                                    <ImageView fitHeight="23.0" fitWidth="23.0" pickOnBounds="true" preserveRatio="true">
+                                        <Image url="/images/guardar.png" />
+                                    </ImageView>
+                                </graphic>
+                            </Button>
+                            <Button fx:id="btnModificarCliente" mnemonicParsing="false" prefHeight="70.0" prefWidth="70.0" styleClass="botonGestionarCliente">
+                                <graphic>
+                                    <ImageView fitHeight="26.0" fitWidth="26.0" pickOnBounds="true" preserveRatio="true">
+                                        <Image url="/images/editar.png" />
+                                    </ImageView>
+                                </graphic>
+                            </Button>
+                            <Button fx:id="btnEliminarCliente" mnemonicParsing="false" prefHeight="70.0" prefWidth="70.0" styleClass="botonGestionarClienteEven">
+                                <graphic>
+                                    <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                                        <Image url="/images/delete.png" />
+                                    </ImageView>
+                                </graphic>
+                            </Button>
+                            <Button fx:id="btnLimpiarCampos" mnemonicParsing="false" prefHeight="70.0" prefWidth="70.0" styleClass="botonGestionarCliente">
+                                <graphic>
+                                    <ImageView fitHeight="23.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                                        <Image url="/images/clear.png" />
+                                    </ImageView>
+                                </graphic>
+                            </Button>
+                            <Button fx:id="btnRefrescar" mnemonicParsing="false" prefHeight="70.0" prefWidth="70.0" styleClass="botonGestionarClienteEven">
+                                <graphic>
+                                    <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                                        <Image url="/images/refresh.png" />
+                                    </ImageView>
+                                </graphic>
+                            </Button>
+                            <Button fx:id="btnCarpeta" mnemonicParsing="false" prefHeight="70.0" prefWidth="70.0" styleClass="botonGestionarCliente">
+                                <graphic>
+                                    <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                                        <Image url="/images/folder.png" />
+                                    </ImageView>
+                                </graphic>
+                            </Button>
+                        </HBox>
+                    </bottom>
+                </BorderPane>
+                <AnchorPane fx:id="calendarioPane" prefHeight="566.0" prefWidth="1056.0" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                <AnchorPane fx:id="listado" prefHeight="565.0" prefWidth="1056.0" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" xmlns:fx="http://javafx.com/fxml">
+                    <VBox style=" -fx-background-color: #EDEDED;" AnchorPane.bottomAnchor="0" AnchorPane.leftAnchor="0" AnchorPane.rightAnchor="0" AnchorPane.topAnchor="0">
+                        <HBox prefHeight="224.0" prefWidth="1056.0">
+                            <GridPane hgap="7.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="257.0" prefWidth="942.0" style="-fx-padding: 20px; -fx-background-color: #EDEDED;" vgap="15.0" HBox.hgrow="ALWAYS">
+                                <columnConstraints>
+                                    <ColumnConstraints />
+                                    <ColumnConstraints />
+                                    <ColumnConstraints />
+                                    <ColumnConstraints />
+                                    <ColumnConstraints />
+                                    <ColumnConstraints />
+                                    <ColumnConstraints />
+                                    <ColumnConstraints />
+                                    <ColumnConstraints />
+                                    <ColumnConstraints />
+                                    <ColumnConstraints />
+                                    <ColumnConstraints />
+                                    <ColumnConstraints />
+                                    <ColumnConstraints />
+                                </columnConstraints>
+                                <rowConstraints>
+                                    <RowConstraints />
+                                    <RowConstraints />
+                                    <RowConstraints />
+                                    <RowConstraints />
+                                    <RowConstraints />
+                                    <RowConstraints maxHeight="0.0" minHeight="0.0" prefHeight="0.0" />
+                                    <RowConstraints maxHeight="0.0" minHeight="0.0" prefHeight="0.0" />
+                                </rowConstraints>
+                                <Label text="Nombre:" textFill="4d4d4d" GridPane.columnIndex="0" GridPane.hgrow="ALWAYS" GridPane.rowIndex="0" />
+                                <TextField fx:id="buscarNombre" promptText="Buscar por nombre" styleClass="textFieldsListado" GridPane.columnIndex="1" GridPane.hgrow="ALWAYS" GridPane.rowIndex="0" />
+                                <Label text="NIF:" textFill="4d4d4d" GridPane.columnIndex="2" GridPane.hgrow="ALWAYS" GridPane.rowIndex="0" />
+                                <TextField fx:id="buscarNif" promptText="Buscar por NIF" styleClass="textFieldsListado" GridPane.columnIndex="3" GridPane.hgrow="ALWAYS" GridPane.rowIndex="0" />
+                                <Label text="Dirección:" textFill="4d4d4d" GridPane.columnIndex="4" GridPane.hgrow="ALWAYS" GridPane.rowIndex="0" />
+                                <TextField fx:id="buscarDireccion" promptText="Buscar por dirección" styleClass="textFieldsListado" GridPane.columnIndex="5" GridPane.hgrow="ALWAYS" />
+                                <Label text="Internet:" textFill="4d4d4d" GridPane.columnIndex="6" GridPane.hgrow="ALWAYS" />
+                                <TextField fx:id="buscarInternet" promptText="Buscar por internet" styleClass="textFieldsListado" GridPane.columnIndex="7" GridPane.hgrow="ALWAYS" />
+                                <Label text="Localidad:" textFill="4d4d4d" GridPane.columnIndex="0" GridPane.hgrow="ALWAYS" GridPane.rowIndex="1" />
+                                <TextField fx:id="buscarLocalidad" promptText="Buscar por localidad" styleClass="textFieldsListado" GridPane.columnIndex="1" GridPane.hgrow="ALWAYS" GridPane.rowIndex="1" />
+                                <Label text="Provincia:" textFill="4d4d4d" GridPane.columnIndex="2" GridPane.hgrow="ALWAYS" GridPane.rowIndex="1" />
+                                <TextField fx:id="buscarProvincia" promptText="Buscar por provincia" styleClass="textFieldsListado" GridPane.columnIndex="3" GridPane.hgrow="ALWAYS" GridPane.rowIndex="1" />
+                                <Label text="CUPS:" textFill="4d4d4d" GridPane.columnIndex="4" GridPane.hgrow="ALWAYS" GridPane.rowIndex="1" />
+                                <TextField fx:id="buscarCUPS" promptText="Buscar por CUPS" styleClass="textFieldsListado" GridPane.columnIndex="5" GridPane.hgrow="ALWAYS" GridPane.rowIndex="1" />
+                                <Label text="Telefonía:" textFill="4d4d4d" GridPane.columnIndex="6" GridPane.hgrow="ALWAYS" GridPane.rowIndex="1" />
+                                <TextField fx:id="buscarTelefonia" promptText="Buscar por telefonía" styleClass="textFieldsListado" GridPane.columnIndex="7" GridPane.hgrow="ALWAYS" GridPane.rowIndex="1" />
+                                <Label text="Dir. Fibra" textFill="4d4d4d" GridPane.hgrow="ALWAYS" GridPane.rowIndex="2" />
+                                <TextField fx:id="buscarDirFibra" promptText="Buscar por dirección fibra" styleClass="textFieldsListado" GridPane.columnIndex="1" GridPane.hgrow="ALWAYS" GridPane.rowIndex="2" />
+                                <Label text="Observaciones:" textFill="4d4d4d" GridPane.columnIndex="2" GridPane.hgrow="ALWAYS" GridPane.rowIndex="2" />
+                                <TextField fx:id="buscarObservaciones" promptText="Buscar por observaciones" styleClass="textFieldsListado" GridPane.columnIndex="3" GridPane.hgrow="ALWAYS" GridPane.rowIndex="2" />
+                                <Label text="Email:" textFill="4d4d4d" GridPane.columnIndex="4" GridPane.hgrow="ALWAYS" GridPane.rowIndex="2" />
+                                <TextField fx:id="buscarEmail" promptText="Buscar por email" styleClass="textFieldsListado" GridPane.columnIndex="5" GridPane.hgrow="ALWAYS" GridPane.rowIndex="2" />
+                                <Label text="Alarmas:" textFill="4d4d4d" GridPane.columnIndex="6" GridPane.hgrow="ALWAYS" GridPane.rowIndex="2" />
+                                <TextField fx:id="buscarAlarma" promptText="Buscar por alarma" styleClass="textFieldsListado" GridPane.columnIndex="7" GridPane.hgrow="ALWAYS" GridPane.rowIndex="2" />
+                                <Label text="Teléfono:" textFill="4d4d4d" GridPane.hgrow="ALWAYS" GridPane.rowIndex="3" />
+                                <TextField fx:id="buscarTelefono" promptText="Buscar por teléfono" styleClass="textFieldsListado" GridPane.columnIndex="1" GridPane.hgrow="ALWAYS" GridPane.rowIndex="3" />
+                                <Label text="Luz:" textFill="4d4d4d" GridPane.columnIndex="2" GridPane.hgrow="ALWAYS" GridPane.rowIndex="3" />
+                                <TextField fx:id="buscarLuz" promptText="Buscar por compañía luz" styleClass="textFieldsListado" GridPane.columnIndex="3" GridPane.hgrow="ALWAYS" GridPane.rowIndex="3" />
+                                <Label text="Gas:" textFill="4d4d4d" GridPane.columnIndex="4" GridPane.hgrow="ALWAYS" GridPane.rowIndex="3" />
+                                <TextField fx:id="buscarGas" promptText="Buscar por compañía gas" styleClass="textFieldsListado" GridPane.columnIndex="5" GridPane.hgrow="ALWAYS" GridPane.rowIndex="3" />
+                                <Label text="Dir. Alarma:" textFill="4d4d4d" GridPane.columnIndex="6" GridPane.hgrow="ALWAYS" GridPane.rowIndex="3" />
+                                <TextField fx:id="buscarDirAlarma" promptText="Buscar por dirección alarma" styleClass="textFieldsListado" GridPane.columnIndex="7" GridPane.hgrow="ALWAYS" GridPane.rowIndex="3" />
+                                <Label text="Dir. Suministro:" GridPane.hgrow="ALWAYS" GridPane.rowIndex="4" />
+                                <TextField fx:id="buscarDirSuministro" promptText="Buscar por dirección suministro" styleClass="textFieldsListado" GridPane.columnIndex="1" GridPane.hgrow="ALWAYS" GridPane.rowIndex="4" />
+                            </GridPane>
+
+                            <!-- Botones -->
+                            <AnchorPane prefHeight="138.0" prefWidth="121.0" style="-fx-background-color: EDEDED;">
+                                <VBox alignment="CENTER" spacing="10" style="-fx-background-color: EDEDED;" AnchorPane.leftAnchor="10" AnchorPane.topAnchor="10">
+                                    <Button fx:id="btnExportarLista" mnemonicParsing="false" prefHeight="53.0" prefWidth="70.0" style="-fx-border-width: 2px; -fx-border-color: #0C1827;" styleClass="botonGestionarCliente">
+                                        <graphic>
+                                            <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                                                <Image url="/images/excel.png" />
+                                            </ImageView>
+                                        </graphic>
+                                    </Button>
+
+                                    <Button fx:id="btnRecargar" mnemonicParsing="false" prefHeight="53.0" prefWidth="70.0" style="-fx-border-width: 2px; -fx-border-color: #0C1827;" styleClass="botonGestionarCliente">
+                                        <graphic>
+                                            <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                                                <Image url="/images/refresh.png" />
+                                            </ImageView>
+                                        </graphic>
+                                    </Button>
+
+                                    <Button onAction="#limpiarBusqueda" prefHeight="53.0" prefWidth="70.0" style="-fx-border-width: 2px; -fx-border-color: #0C1827;" styleClass="botonGestionarCliente" GridPane.columnIndex="7" GridPane.rowIndex="4">
+                                        <graphic>
+                                            <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                                                <Image url="/images/clear.png" />
+                                            </ImageView>
+                                        </graphic>
+                                    </Button>
+
+                                </VBox>
+                            </AnchorPane>
+                        </HBox>
+
+                        <!-- Tabla de clientes -->
+                        <TableView fx:id="tablaClientes" prefHeight="267.0" prefWidth="1056.0" AnchorPane.bottomAnchor="0" AnchorPane.leftAnchor="0" AnchorPane.rightAnchor="0" AnchorPane.topAnchor="0" VBox.vgrow="ALWAYS">
+                            <columns>
+                                <TableColumn fx:id="colNombre" text="Nombre" />
+                                <TableColumn fx:id="colNif" text="NIF" />
+                                <TableColumn fx:id="colDireccion" text="Dirección" />
+                                <TableColumn fx:id="colLocalidad" text="Localidad" />
+                                <TableColumn fx:id="colProvincia" text="Provincia" />
+                                <TableColumn fx:id="colCUPS" text="CUPS" />
+                                <TableColumn fx:id="colDirSuministro" text="Direcciones suministro" />
+                                <TableColumn fx:id="colObservaciones" text="Observaciones" />
+                                <TableColumn fx:id="colEmail" text="Emails" />
+                                <TableColumn fx:id="colTelefono" text="Teléfonos" />
+                                <TableColumn fx:id="colLuz" text="Luz" />
+                                <TableColumn fx:id="colGas" text="Gas" />
+                                <TableColumn fx:id="colInternet" text="Internet" />
+                                <TableColumn fx:id="colTelefonia" text="Telefonia" />
+                                <TableColumn fx:id="colAlarma" text="Alarma" />
+                                <TableColumn fx:id="colDirFibra" text="Direcciones Fibra" />
+                                <TableColumn fx:id="colDirAlarma" text="Direcciones Alarma" />
+                            </columns>
+                        </TableView>
+                    </VBox>
+                </AnchorPane>
+
+                <!--SECCIÓN DE RENOVACIONES-->
+                <AnchorPane fx:id="renovacionesPane" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                    <fx:include source="renovations-view.fxml" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                </AnchorPane>
+
+                <!--SECCIÓN DE ADMIN-->
+                <AnchorPane fx:id="adminPane" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                    <fx:include source="admin-view.fxml" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                </AnchorPane>
+
+                <!--SECCIÓN DE EMPLEADO-->
+                <AnchorPane fx:id="empleadoPane" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                    <fx:include source="empleado-view.fxml" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                </AnchorPane>
+            </AnchorPane>
+        </center>
+    </BorderPane>
+</AnchorPane>

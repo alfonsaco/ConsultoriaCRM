@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="anchorGas" prefHeight="560.0" prefWidth="880.0" style="-fx-background-color: #FFFFFF;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.practicas.consultoriacrm.Tabs.TabGas">
+
+    <ScrollPane fitToHeight="true" fitToWidth="true" hbarPolicy="NEVER" AnchorPane.bottomAnchor="0" AnchorPane.leftAnchor="0" AnchorPane.rightAnchor="0" AnchorPane.topAnchor="0">
+
+        <BorderPane fx:id="gasBorderPane" style="-fx-background-color: #FFFFFF; -fx-padding: 25px;">
+         <center>
+                <AnchorPane prefHeight="508.0" style="-fx-background-color: #FFF;" BorderPane.alignment="CENTER">
+                    <Text fill="#4d4d4d" layoutX="15.0" layoutY="25.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tarifa:" AnchorPane.leftAnchor="15.0" />
+                    <ComboBox fx:id="comboTarifaGas" layoutX="15.0" layoutY="30.0" prefHeight="25.0" prefWidth="180.0" styleClass="comboLimpiar" AnchorPane.leftAnchor="15.0" />
+                    <Text fill="#4d4d4d" layoutX="210.0" layoutY="25.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Potencia:" AnchorPane.leftAnchor="210.0" AnchorPane.rightAnchor="569.958984375" />
+                    <TextField fx:id="txtPotenciaGas" layoutX="210.0" layoutY="30.0" prefHeight="25.0" prefWidth="150.0" styleClass="formulariosCliente" AnchorPane.leftAnchor="210.0" AnchorPane.rightAnchor="470.0" />
+                    <Text fill="#4d4d4d" layoutX="380.0" layoutY="25.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Fecha Activación:" AnchorPane.rightAnchor="357.15625" />
+                    <DatePicker fx:id="dateActivacionGas" layoutX="380.0" layoutY="30.0" prefHeight="25.0" prefWidth="180.0" AnchorPane.rightAnchor="270.0" />
+                    <DatePicker fx:id="dateContratoGas" layoutX="580.0" layoutY="30.0" prefHeight="25.0" prefWidth="180.0" AnchorPane.rightAnchor="70.0" />
+                    <Text fill="#4d4d4d" layoutX="15.0" layoutY="75.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Consumo:" AnchorPane.leftAnchor="15.0" />
+                    <TextField fx:id="txtConsumoGas" layoutX="15.0" layoutY="80.0" prefHeight="25.0" prefWidth="360.0" styleClass="formulariosCliente" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="455.0" />
+                    <Text fill="#4d4d4d" layoutX="400.0" layoutY="75.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Modalidad:" AnchorPane.rightAnchor="368.369140625" />
+                    <TextField fx:id="txtModalidadGas" layoutX="400.0" layoutY="80.0" prefHeight="25.0" prefWidth="360.0" styleClass="formulariosCliente" AnchorPane.rightAnchor="70.0" />
+                    <TextField fx:id="txtNumCuentaGas" layoutX="15.0" layoutY="130.0" prefHeight="25.0" prefWidth="360.0" styleClass="formulariosCliente" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="455.0" />
+                    <TextField fx:id="txtDirSumGas" layoutX="400.0" layoutY="130.0" prefHeight="25.0" prefWidth="360.0" styleClass="formulariosCliente" AnchorPane.rightAnchor="70.0" />
+                    <ComboBox fx:id="comboComercializadoraGas" layoutX="15.0" layoutY="180.0" prefHeight="25.0" prefWidth="360.0" styleClass="comboLimpiar" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="455.0" />
+                    <ComboBox fx:id="comboClawbackGas" layoutX="400.0" layoutY="180.0" prefHeight="25.0" prefWidth="360.0" styleClass="comboLimpiar" AnchorPane.rightAnchor="70.0" />
+                    <DatePicker fx:id="dateBajaGas" layoutX="15.0" layoutY="230.0" prefHeight="25.0" prefWidth="360.0" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="455.0" />
+                    <TextField fx:id="txtContratoGas" layoutX="400.0" layoutY="230.0" prefHeight="25.0" prefWidth="360.0" styleClass="formulariosCliente" AnchorPane.rightAnchor="70.0" />
+                    <TextField fx:id="txtRepresentanteGas" layoutX="15.0" layoutY="280.0" prefHeight="25.0" prefWidth="360.0" styleClass="formulariosCliente" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="455.0" />
+                    <ComboBox fx:id="comboColaboradoresGas" layoutX="400.0" layoutY="280.0" prefHeight="25.0" prefWidth="360.0" styleClass="comboLimpiar" AnchorPane.rightAnchor="70.0" />
+                    <Text fill="#4d4d4d" layoutX="400.0" layoutY="275.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Colaborador comercial:" AnchorPane.rightAnchor="305.1875" />
+                    <Text fill="#4d4d4d" layoutX="15.0" layoutY="125.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Numero de cuenta:" AnchorPane.leftAnchor="15.0" />
+                    <Text fill="#4d4d4d" layoutX="15.0" layoutY="225.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Fecha de baja:" AnchorPane.leftAnchor="15.0" />
+                    <Text fill="#4d4d4d" layoutX="15.0" layoutY="175.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Comercializadora:" AnchorPane.leftAnchor="15.0" />
+                    <Text fill="#4d4d4d" layoutX="15.0" layoutY="275.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Datos del representate:" AnchorPane.leftAnchor="15.0" />
+                    <Text fill="#4d4d4d" layoutX="15.0" layoutY="325.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Liquidación:" AnchorPane.leftAnchor="15.0" />
+                    <TextField fx:id="txtLiquidacionGas" layoutX="15.0" layoutY="330.0" prefHeight="25.0" prefWidth="360.0" styleClass="formulariosCliente" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="455.0" />
+                    <Text fill="#4d4d4d" layoutX="15.0" layoutY="425.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Observaciones:" AnchorPane.leftAnchor="15.0" />
+                    <Text fill="#4d4d4d" layoutX="400.0" layoutY="325.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Precio:" AnchorPane.rightAnchor="392.75" />
+                    <TextField fx:id="txtPrecioGas" layoutX="400.0" layoutY="330.0" prefHeight="25.0" prefWidth="360.0" styleClass="formulariosCliente" AnchorPane.rightAnchor="70.0" />
+                    <TextField fx:id="txtComisionGas" layoutX="15.0" layoutY="380.0" prefHeight="25.0" prefWidth="360.0" styleClass="formulariosCliente" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="455.0" />
+                    <TextField fx:id="txtComisionColaborador" layoutX="400.0" layoutY="380.0" prefHeight="25.0" prefWidth="360.0" styleClass="formulariosCliente" AnchorPane.rightAnchor="70.0" />
+                    <TextArea fx:id="txtObservacionesGas" layoutX="15.0" layoutY="430.0" prefHeight="60.0" prefWidth="590.0" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="225.0" />
+                    <Text fill="#4d4d4d" layoutX="400.0" layoutY="225.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tipo de contrato:" AnchorPane.rightAnchor="337.396484375" />
+                    <Text fill="#4d4d4d" layoutX="400.0" layoutY="125.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Dirección del suministro:" AnchorPane.rightAnchor="297.810546875" />
+                    <Text fill="#4d4d4d" layoutX="15.0" layoutY="375.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Comisión Empresa: " AnchorPane.leftAnchor="15.0" />
+                    <Button fx:id="btnHistoricoGas" layoutX="620.0" layoutY="430.0" mnemonicParsing="false" prefHeight="60.0" prefWidth="140.0" styleClass="botonHistorico" text="HISTÓRICO" AnchorPane.rightAnchor="70.0" />
+                    <Text fill="#4d4d4d" layoutX="580.0" layoutY="25.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Fecha contrato:" AnchorPane.rightAnchor="166.73046875" />
+                    <Text fill="#4d4d4d" layoutX="400.0" layoutY="175.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Clawback:" AnchorPane.rightAnchor="375.6171875" />
+                    <Text fill="#4d4d4d" layoutX="400.0" layoutY="375.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Comisión colaborador: " AnchorPane.rightAnchor="305.08203125" />
+                </AnchorPane>
+         </center>
+        </BorderPane>
+    </ScrollPane>
+</AnchorPane>

@@ -1,0 +1,229 @@
+/* PALETA DE COLORES
+    - AZUL FONDO GENERAL: #0C1827
+    - AZUL FONDO TAB: #1b3557
+    - CAMPOS INHABILITADOS: #3b5d8a
+*/
+* {
+    -fx-font-family: sans-serif;
+}
+
+
+/* *********************************** BOTONES ********************************** */
+/* BOTÓN DEL BUSCADOR */
+#btnVaciarCampoBusqueda {
+    -fx-border-radius: 0px;
+    -fx-background-radius: 0px;
+    -fx-background-color: #CCC;
+    -fx-text-fill: #4d4d4d;
+    -fx-cursor: hand;
+    -fx-border-width: 2px;
+    -fx-border-color: #4d4d4d;
+}
+#btnVaciarCampoBusqueda:hover {
+    -fx-background-color: #EEE;
+}
+
+/* ESTILOS PARA LOS BOTONES DE CLIENTE */
+.botonGestionarCliente {
+    -fx-background-color: #E2F756;
+    -fx-text-fill: #0C1827;
+    -fx-background-radius: 0px;
+    -fx-cursor: hand;
+}
+.botonGestionarCliente:hover {
+    -fx-background-color: #eefc8b;
+    -fx-text-fill: #0C1827;
+}
+.botonGestionarClienteEven {
+    -fx-background-color: #d7ed47;
+    -fx-text-fill: #0C1827;
+    -fx-background-radius: 0px;
+    -fx-cursor: hand;
+}
+.botonGestionarClienteEven:hover {
+    -fx-background-color: #eefc8b;
+    -fx-text-fill: #0C1827;
+}
+
+
+.botonBorrarCups {
+    -fx-background-color: #d92727;
+    -fx-background-radius: 0px;
+    -fx-border-color: #4d4d4d;
+    -fx-border-width: 2px;
+    -fx-border-style: solid;
+    -fx-cursor: hand;
+}
+.botonBorrarCups:hover {
+    -fx-background-color: #ad4040;
+}
+
+/* ESTILOS PARA LOS BOTONES DE SECCIÓN */
+.botonSeccion {
+    -fx-background-color: #13253B;
+    -fx-text-fill: #FFF;
+    -fx-cursor: hand;
+    -fx-border-radius: 0px;
+    -fx-background-radius: 0px;
+    -fx-font-size: 1.1em;
+}
+.botonSeccion:hover {
+    -fx-background-color: #3A4F6D;
+}
+.botonSeccion.clickado {
+    -fx-background-color: #E2F756;
+    -fx-text-fill: #0C1827;
+}
+
+.botonHistorico {
+    -fx-background-color: #1b3557;
+    -fx-text-fill: #FFF;
+    -fx-font-size: 1.2em;
+    -fx-font-weight: bold;
+    -fx-cursor: hand;
+    -fx-background-radius: 0;
+}
+.botonHistorico:hover {
+    -fx-background-color: #3e5a85;
+}
+
+/* ESTILOS PARA BOTONES DE RENOVACIONES */
+.botonRenovacion {
+    -fx-background-color: #1b3557;
+    -fx-text-fill: #FFF;
+    -fx-font-size: 1.4em;
+    -fx-font-weight: bold;
+    -fx-cursor: hand;
+    -fx-background-radius: 0;
+}
+.botonRenovacion:hover {
+    -fx-background-color: #3a5b85;
+}
+.botonRenovacion.clickado {
+    -fx-background-color: #E2F756;
+    -fx-text-fill: #0C1827;
+}
+/* ******************************************************************************** */
+
+/* LISTA */
+.list-view .list-cell:hover {
+    -fx-background-color: #d1e3ff;
+    -fx-cursor: hand;
+    -fx-text-fill: #000;
+}
+
+/* ESTILOS DE LOS TAB Y EL TAB PANE */
+/* MUY IMPORTANTE, FONDO DEL TAB HEAD */
+.tab-pane {
+    -fx-background-color: #1b3557;
+}
+.tab-pane .tab-header-area .tab-header-background {
+    -fx-background-color: #0C1827;
+}
+/* MUY IMPORTANTE LO DE ARRIBA */
+.tab {
+    -fx-background-color: #FFF;
+    -fx-border-radius: 0px;
+    -fx-background-radius: 0px;
+    -fx-cursor: hand;
+    -fx-border-width: 0px;
+}
+.tab:hover {
+    -fx-background-color: #f3ffa6;
+}
+.tab:selected {
+    -fx-background-color: #e2f756;
+    -fx-focus-color: transparent;
+    -fx-faint-focus-color: transparent;
+}
+.tab:selected .tab-label {
+    -fx-text-fill: #0C1827;
+}
+/* FIN ESTILOS TABS */
+
+
+/* ******************************************************************************** */
+/* ESTILOS PARA LOS FORMULARIOS */
+.formulariosCliente {
+    -fx-background-color: transparent;
+    -fx-border-radius: 0px;
+    -fx-background-radius: 0px;
+    -fx-border-color: #4d4d4d;
+    -fx-border-width: 2px;
+    -fx-border-style: solid;
+    -fx-font-weight: bold;
+    -fx-text-fill: #4d4d4d;
+    -fx-arrow-cell-color: #4d4d4d;
+}
+TextArea, DatePicker, ComboBox, #buscador {
+    -fx-border-radius: 0px;
+    -fx-background-radius: 0px;
+    -fx-background-color: #FFFFFF;
+    -fx-control-inner-background: #FFFFFF;
+    -fx-border-color: transparent;
+    -fx-border-color: #4d4d4d;
+    -fx-border-width: 2px;
+    -fx-border-style: solid;
+    /* Para ajustar el texto en el TextArea */
+    -fx-wrap-text: true;
+    -fx-font-weight: bold;
+}
+/* Flecha del combobox */
+ComboBox .arrow {
+    -fx-background-color: #4d4d4d;
+}
+/*
+    ESTILOS PARA DESABILITAR EDICIÓN EN TABDATOS
+*/
+.deshabilitar-edicion {
+    -fx-text-fill: #51555e;
+    -fx-opacity: 0.8;
+    -fx-cursor: not-allowed;
+    -fx-background-color: #DEE3E9;
+    -fx-control-inner-background: #DEE3E9;
+    -fx-border-color: #B8B8B8;
+}
+/* ******************************************************************************** */
+
+
+/* ************************** ESTILOS DE LA SECCIÓN LISTA ************************* */
+.textFieldsListado {
+    -fx-background-color: transparent;
+    -fx-text-fill: #4d4d4d;
+    -fx-border-width: 2px;
+    -fx-border-color: #4d4d4d;
+    -fx-background-radius: 0;
+}
+
+
+/* ********************************* SECCIÓN ADMIN ********************************* */
+.paneNuevoUsuario {
+    -fx-background-color: #000;
+}
+
+/* ******************************** TEXTFIELDS DIALOGS ***************************** */
+.textfieldDialogs {
+    -fx-background-color: #FFF;
+    -fx-border-radius: 0px;
+    -fx-background-radius: 0px;
+    -fx-border-color: #4d4d4d;
+    -fx-border-width: 2px;
+    -fx-border-style: solid;
+    -fx-font-weight: bold;
+    -fx-text-fill: #4d4d4d;
+    -fx-arrow-cell-color: #4d4d4d;
+}
+.botonVer {
+    -fx-background-color: #1b3557;
+    -fx-border-radius: 0px;
+    -fx-background-radius: 0px;
+    -fx-border-color: #1b3557;
+    -fx-border-width: 0px;
+    -fx-border-style: solid;
+    -fx-font-weight: bold;
+    -fx-text-fill: #EEE;
+    -fx-cursor: hand;
+}
+.botonVer:hover {
+    -fx-background-color: #46658c;
+}

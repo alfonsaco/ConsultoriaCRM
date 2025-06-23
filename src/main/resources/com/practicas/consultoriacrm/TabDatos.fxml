@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane style="-fx-background-color: #FFFFFF;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.practicas.consultoriacrm.Tabs.TabDatos">
+
+    <ScrollPane fitToHeight="true" fitToWidth="true" hbarPolicy="NEVER" AnchorPane.bottomAnchor="0" AnchorPane.leftAnchor="0" AnchorPane.rightAnchor="0" AnchorPane.topAnchor="0">
+
+        <AnchorPane minHeight="600" style="-fx-background-color: #FFFFFF; -fx-padding: 25px;">
+            <TextField fx:id="txtNombre" layoutX="14.0" layoutY="31.0" prefHeight="25.0" prefWidth="292.0" styleClass="formulariosCliente" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="485.0" />
+            <TextField fx:id="txtNombreComercial" layoutX="323.0" layoutY="31.0" prefHeight="25.0" prefWidth="220.0" styleClass="formulariosCliente" AnchorPane.rightAnchor="248.0" />
+            <Text fill="#4d4d4d" layoutX="14.0" layoutY="28.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nombre:" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="367.447265625" />
+            <Text fill="#4d4d4d" layoutX="323.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nombre comercial:" AnchorPane.rightAnchor="367.447265625" />
+            <TextField fx:id="txtNIF" layoutX="566.0" layoutY="31.0" prefHeight="25.0" prefWidth="215.0" styleClass="formulariosCliente" AnchorPane.rightAnchor="25.0" />
+            <Text fill="#4d4d4d" layoutX="564.0" layoutY="28.0" strokeType="OUTSIDE" strokeWidth="0.0" text="NIF:" AnchorPane.rightAnchor="215.0" />
+            <Text fill="#4d4d4d" layoutX="14.0" layoutY="84.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Dirección:" AnchorPane.leftAnchor="14.0" />
+            <TextField fx:id="txtDireccion" layoutX="14.0" layoutY="88.0" prefHeight="25.0" prefWidth="292.0" styleClass="formulariosCliente" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="485.0" />
+            <Text fill="#4d4d4d" layoutX="323.0" layoutY="84.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Fecha de creación:" AnchorPane.rightAnchor="368.060546875" />
+            <DatePicker fx:id="fechaCreacion" layoutX="323.0" layoutY="88.0" prefHeight="25.0" prefWidth="220.0" styleClass="formulariosCliente" AnchorPane.rightAnchor="248.0" />
+            <TextField fx:id="txtCodPostal" layoutX="566.0" layoutY="88.0" prefHeight="25.0" prefWidth="215.0" styleClass="formulariosCliente" AnchorPane.rightAnchor="25.0" />
+            <Text fill="#4d4d4d" layoutX="565.0" layoutY="84.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cod. Postal:" AnchorPane.rightAnchor="175.060546875" />
+            <TextField fx:id="txtLocalidad" layoutX="14.0" layoutY="138.0" prefHeight="25.0" prefWidth="243.0" styleClass="formulariosCliente" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="534.0" />
+            <Text fill="#4d4d4d" layoutX="14.0" layoutY="134.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Localidad:" AnchorPane.leftAnchor="14.0" />
+            <TextField fx:id="txtProvincia" layoutX="302.0" layoutY="138.0" prefHeight="25.0" prefWidth="225.0" styleClass="formulariosCliente" AnchorPane.rightAnchor="291.0" />
+            <ComboBox fx:id="comboEmail" layoutX="491.0" layoutY="138.0" prefHeight="25.0" prefWidth="254.0" styleClass="comboVaciar" AnchorPane.rightAnchor="19.0" />
+            <TextArea fx:id="txtObservaciones" layoutX="14.0" layoutY="453.0" prefHeight="78.0" prefWidth="393.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="384.0" />
+            <ComboBox fx:id="comboTelefono" layoutX="424.0" layoutY="455.0" prefHeight="25.0" prefWidth="345.0" styleClass="comboVaciar" AnchorPane.rightAnchor="19.0" />
+            <DatePicker fx:id="fechaProxContacto" layoutX="424.0" layoutY="505.0" prefHeight="25.0" prefWidth="166.0" AnchorPane.rightAnchor="201.0" />
+
+            <ComboBox fx:id="comboTecnico" layoutX="606.0" layoutY="505.0" prefHeight="25.0" prefWidth="166.0" styleClass="comboLimpiar" AnchorPane.rightAnchor="19.0" />
+            <Text fill="#4d4d4d" layoutX="279.0" layoutY="134.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Provincia:" AnchorPane.rightAnchor="466.474609375" />
+            <Text fill="#4d4d4d" layoutX="490.0" layoutY="134.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Email:" AnchorPane.rightAnchor="241.0" />
+            <Text fill="#4d4d4d" layoutX="14.0" layoutY="190.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Compañía luz:" AnchorPane.leftAnchor="14.0" />
+            <Text fill="#4d4d4d" layoutX="14.0" layoutY="237.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Compañía gas:" AnchorPane.leftAnchor="14.0" />
+            <Text fill="#4d4d4d" layoutX="14.0" layoutY="292.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Compañía internet:" AnchorPane.leftAnchor="14.0" />
+            <Text fill="#4d4d4d" layoutX="14.0" layoutY="341.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Compañía telefonía:" AnchorPane.leftAnchor="14.0" />
+            <Text fill="#4d4d4d" layoutX="14.0" layoutY="394.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Compañía alarmas:" AnchorPane.leftAnchor="14.0" />
+
+            <ComboBox fx:id="comboLuz" layoutX="14.0" layoutY="194.0" prefHeight="25.0" prefWidth="100.0" styleClass="comboLimpiar" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="640.0" />
+            <ComboBox fx:id="comboGas" layoutX="14.0" layoutY="243.0" prefHeight="25.0" prefWidth="100.0" styleClass="comboLimpiar" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="640.0" />
+            <ComboBox fx:id="comboInternet" layoutX="14.0" layoutY="295.0" prefHeight="25.0" prefWidth="100.0" styleClass="comboLimpiar" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="640.0" />
+            <ComboBox fx:id="comboCompTel" layoutX="14.0" layoutY="345.0" prefHeight="25.0" prefWidth="100.0" styleClass="comboLimpiar" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="640.0" />
+            <ComboBox fx:id="comboAlarma" layoutX="14.0" layoutY="398.0" prefHeight="25.0" prefWidth="100.0" styleClass="comboLimpiar" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="640.0" />
+
+            <Text fill="#4d4d4d" layoutX="279.0" layoutY="190.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Fecha de activación:" AnchorPane.rightAnchor="285.0" />
+            <Text fill="#4d4d4d" layoutX="299.0" layoutY="236.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Fecha de activación:" AnchorPane.rightAnchor="285.0" />
+            <Text fill="#4d4d4d" layoutX="279.0" layoutY="291.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Fecha de activación:" AnchorPane.rightAnchor="285.0" />
+            <Text fill="#4d4d4d" layoutX="279.0" layoutY="340.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Fecha de activación:" AnchorPane.rightAnchor="285.0" />
+            <Text fill="#4d4d4d" layoutX="279.0" layoutY="393.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Fecha de activación:" AnchorPane.rightAnchor="285.0" />
+
+            <Text fill="#4d4d4d" layoutX="14.0" layoutY="450.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Observaciones:" AnchorPane.leftAnchor="14.0" />
+            <Text fill="#4d4d4d" layoutX="429.0" layoutY="500.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Próximo contacto:" AnchorPane.rightAnchor="266.228515625" />
+            <Text fill="#4d4d4d" layoutX="607.0" layoutY="500.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Técnico asignado:" AnchorPane.rightAnchor="89.5703125" />
+            <DatePicker fx:id="fechaLuz" layoutX="279.0" layoutY="194.0" prefHeight="25.0" prefWidth="130.0" AnchorPane.rightAnchor="260.0" />
+            <DatePicker fx:id="fechaGas" layoutX="279.0" layoutY="243.0" prefHeight="25.0" prefWidth="130.0" AnchorPane.rightAnchor="260.0" />
+            <DatePicker fx:id="fechaInternet" layoutX="365.0" layoutY="295.0" prefHeight="25.0" prefWidth="130.0" AnchorPane.rightAnchor="260.0" />
+            <DatePicker fx:id="fechaTelefonia" layoutX="279.0" layoutY="345.0" prefHeight="25.0" prefWidth="130.0" AnchorPane.rightAnchor="260.0" />
+            <DatePicker fx:id="fechaAlarmas" layoutX="279.0" layoutY="398.0" prefHeight="25.0" prefWidth="130.0" AnchorPane.rightAnchor="260.0" />
+            <Text fill="#4d4d4d" layoutX="433.0" layoutY="450.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Teléfono:" AnchorPane.rightAnchor="311.646484375" />
+
+            <Text fill="#4d4d4d" layoutX="618.0" layoutY="189.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Clawback:" AnchorPane.rightAnchor="180.0" />
+            <Text fill="#4d4d4d" layoutX="558.0" layoutY="237.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Clawback:" AnchorPane.rightAnchor="180.0" />
+            <Text fill="#4d4d4d" layoutX="558.0" layoutY="290.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Permanencia:" AnchorPane.rightAnchor="160.0" />
+            <Text fill="#4d4d4d" layoutX="558.0" layoutY="340.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Permanencia:" AnchorPane.rightAnchor="160.0" />
+            <Text fill="#4d4d4d" layoutX="558.0" layoutY="392.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Permanencia:" AnchorPane.rightAnchor="160.0" />
+            <TextField fx:id="clawbackLuz" layoutX="615.0" layoutY="194.0" prefWidth="110.0" styleClass="formulariosCliente" AnchorPane.rightAnchor="125.0" />
+            <TextField fx:id="clawbackGas" layoutX="609.0" layoutY="243.0" prefHeight="25.0" prefWidth="110.0" styleClass="formulariosCliente" AnchorPane.rightAnchor="125.0" />
+            <TextField fx:id="clawbackInternet" layoutX="609.0" layoutY="295.0" prefWidth="110.0" styleClass="formulariosCliente" AnchorPane.rightAnchor="125.0" />
+            <TextField fx:id="clawbackTelefonia" layoutX="609.0" layoutY="345.0" prefWidth="110.0" styleClass="formulariosCliente" AnchorPane.rightAnchor="125.0" />
+            <TextField fx:id="clawbackAlarmas" layoutX="609.0" layoutY="398.0" prefWidth="110.0" styleClass="formulariosCliente" AnchorPane.rightAnchor="125.0" />
+
+            <ComboBox fx:id="cupsLuz" layoutX="229.0" layoutY="194.0" prefWidth="200.0" styleClass="comboLimpiar" AnchorPane.rightAnchor="415.0" />
+            <ComboBox fx:id="cupsGas" layoutX="228.0" layoutY="243.0" prefWidth="200.0" styleClass="comboLimpiar" AnchorPane.rightAnchor="415.0" />
+            <ComboBox fx:id="direccionesInternet" layoutX="228.0" layoutY="295.0" prefWidth="200.0" styleClass="comboLimpiar" AnchorPane.rightAnchor="415.0" />
+            <ComboBox fx:id="direccionesTelefonia" layoutX="228.0" layoutY="345.0" prefWidth="200.0" styleClass="comboLimpiar" AnchorPane.rightAnchor="415.0" />
+            <ComboBox fx:id="direccionesAlarmas" layoutX="228.0" layoutY="398.0" prefWidth="200.0" styleClass="comboLimpiar" AnchorPane.rightAnchor="415.0" />
+
+            <Text fill="#4d4d4d" layoutX="228.0" layoutY="190.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CUP:" AnchorPane.rightAnchor="580.0" />
+            <Text fill="#4d4d4d" layoutX="228.0" layoutY="237.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CUP:" AnchorPane.rightAnchor="580.0" />
+            <Text fill="#4d4d4d" layoutX="228.0" layoutY="290.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Dirección:" AnchorPane.rightAnchor="550.0" />
+            <Text fill="#4d4d4d" layoutX="228.0" layoutY="340.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Dirección:" AnchorPane.rightAnchor="550.0" />
+            <Text fill="#4d4d4d" layoutX="228.0" layoutY="392.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Dirección:" AnchorPane.rightAnchor="550.0" />
+
+            <CheckBox fx:id="checkPermanenciaLuz" layoutX="713.0" layoutY="198.0" mnemonicParsing="false" text="Permanencia" AnchorPane.rightAnchor="19.0" />
+            <CheckBox fx:id="checkPermanenciaGas" layoutX="713.0" layoutY="247.0" mnemonicParsing="false" text="Permanencia" AnchorPane.rightAnchor="19.0" />
+            <CheckBox fx:id="checkPermanenciaInternet" layoutX="709.0" layoutY="292.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="90.0" text="Permanencia" AnchorPane.rightAnchor="19.0" />
+            <CheckBox fx:id="checkPermanenciaTel" layoutX="713.0" layoutY="349.0" mnemonicParsing="false" text="Permanencia" AnchorPane.rightAnchor="19.0" />
+            <CheckBox fx:id="checkPermanenciaAlarm" layoutX="713.0" layoutY="402.0" mnemonicParsing="false" text="Permanencia" AnchorPane.rightAnchor="19.0" />
+        </AnchorPane>
+    </ScrollPane>
+</AnchorPane>
