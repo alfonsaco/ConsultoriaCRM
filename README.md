@@ -35,6 +35,7 @@ DB_PASS=tu_contraseña
 CLAVE_ENCRIPT=1234567891234567
 ```
 La clave del encriptado debe ser 1234567891234567.
+
 5. Abre el proyecto en tu IDE (Ej: IntelliJ) y ejecuta la aplicación.
 
 <br>
