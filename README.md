@@ -48,6 +48,8 @@ El sistema incluye dos usuarios preconfigurados para facilitar las pruebas y el 
 | `user`  | `user`     | Técnico  |
 | `admin` | `admin`    | Administrador |
 
+<br>
+
 ## 🛠 Tecnologías utilizadas
 
 - Java 23
