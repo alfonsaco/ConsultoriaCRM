@@ -28,3 +28,11 @@ CLAVE_ENCRIPT=1234567891234567
 La clave del encriptado debe ser 1234567891234567.
 5. Abre el proyecto en tu IDE (Ej: IntelliJ) y ejecuta la aplicación.
 
+## Usuarios por defecto
+
+El sistema incluye dos usuarios preconfigurados para facilitar las pruebas y el acceso inicial:
+
+| Usuario | Contraseña | Rol      |
+|---------|------------|----------|
+| `user`  | `user`     | Técnico  |
+| `admin` | `admin`    | Administrador |
