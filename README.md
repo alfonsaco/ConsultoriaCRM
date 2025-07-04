@@ -63,11 +63,11 @@ El sistema incluye dos usuarios preconfigurados para facilitar las pruebas y el 
 <br>
 
 ## 🖼 Capturas
-<img src="https://github.com/alfonsaco/ConsultoriaCRM/blob/main/src/main/resources/images/CAP1%20(1).PNG" alt="Stronger" width="100px">
-<img src="https://github.com/alfonsaco/ConsultoriaCRM/blob/main/src/main/resources/images/CAP1%20(2).PNG" alt="Stronger" width="100px">
-<img src="https://github.com/alfonsaco/ConsultoriaCRM/blob/main/src/main/resources/images/CAP1%20(3).PNG" alt="Stronger" width="100px">
-<img src="https://github.com/alfonsaco/ConsultoriaCRM/blob/main/src/main/resources/images/CAP1%20(4).PNG" alt="Stronger" width="100px">
-<img src="https://github.com/alfonsaco/ConsultoriaCRM/blob/main/src/main/resources/images/CAP1%20(5).PNG" alt="Stronger" width="100px">
+<img src="https://github.com/alfonsaco/ConsultoriaCRM/blob/main/src/main/resources/images/CAP1%20(1).PNG" alt="Stronger" width="250px">
+<img src="https://github.com/alfonsaco/ConsultoriaCRM/blob/main/src/main/resources/images/CAP1%20(2).PNG" alt="Stronger" width="250px">
+<img src="https://github.com/alfonsaco/ConsultoriaCRM/blob/main/src/main/resources/images/CAP1%20(3).PNG" alt="Stronger" width="250px">
+<img src="https://github.com/alfonsaco/ConsultoriaCRM/blob/main/src/main/resources/images/CAP1%20(4).PNG" alt="Stronger" width="250px">
+<img src="https://github.com/alfonsaco/ConsultoriaCRM/blob/main/src/main/resources/images/CAP1%20(5).PNG" alt="Stronger" width="250px">
 
 <br>
 
