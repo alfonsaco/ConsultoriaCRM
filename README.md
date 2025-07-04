@@ -38,9 +38,12 @@ La clave del encriptado debe ser **1234567891234567**.
 
 5. Abre el proyecto en tu IDE (Ej: IntelliJ) y ejecuta la aplicación.
 
-⚠ ADDONS NO AGUANTA MÁS DE 5 CONEXIONES A LA VEZ ⚠
-Cuando pasas más de unos minutos sin realizar ninguna acción en la aplicación, la base de datos se cierra automaticamente y hay que reiniciar la App. Esto se debe a que se ha utilizado **Addons Clever Cloud** para realizarla, la cual tiene esta limitación.
+<br>
 
+<div style="text-align: center;">
+  ⚠ ADDONS NO AGUANTA MÁS DE 5 CONEXIONES A LA VEZ ⚠ <br>
+  Cuando pasas más de unos minutos sin realizar ninguna acción en la aplicación, la base de datos se cierra automaticamente y hay que reiniciar la App. Esto se debe a que se ha utilizado <strong>Addons Clever Cloud</strong> para realizarla, la cual tiene esta limitación.
+</div>
 <br>
 
 ## 🙍‍♂️ Usuarios por defecto
