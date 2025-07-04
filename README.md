@@ -46,8 +46,7 @@ La clave del encriptado debe ser **1234567891234567**.
 <br>
 
 > ⚠ **ADDONS NO AGUANTA MÁS DE 5 CONEXIONES A LA VEZ** ⚠  
-> Cuando pasas más de unos minutos sin realizar ninguna acción en la aplicación, la base de datos se cierra automáticamente y hay que reiniciar la App.  
-> Esto se debe a que se ha utilizado **Addons Clever Cloud** para realizarla, la cual tiene esta limitación.
+> Cuando pasas más de unos minutos sin realizar ninguna acción en la aplicación, la base de datos se cierra automáticamente y hay que reiniciar la App. Esto se debe a que se ha utilizado **Addons Clever Cloud** para realizarla, la cual tiene esta limitación.
 
 
 <br>
@@ -63,6 +62,15 @@ El sistema incluye dos usuarios preconfigurados para facilitar las pruebas y el 
 
 <br>
 
+## 🖼 Capturas
+<img src="https://github.com/alfonsaco/ConsultoriaCRM/blob/main/src/main/resources/images/CAP1%20(1).PNG" alt="Stronger" width="100px">
+<img src="https://github.com/alfonsaco/ConsultoriaCRM/blob/main/src/main/resources/images/CAP1%20(2).PNG" alt="Stronger" width="100px">
+<img src="https://github.com/alfonsaco/ConsultoriaCRM/blob/main/src/main/resources/images/CAP1%20(3).PNG" alt="Stronger" width="100px">
+<img src="https://github.com/alfonsaco/ConsultoriaCRM/blob/main/src/main/resources/images/CAP1%20(4).PNG" alt="Stronger" width="100px">
+<img src="https://github.com/alfonsaco/ConsultoriaCRM/blob/main/src/main/resources/images/CAP1%20(5).PNG" alt="Stronger" width="100px">
+
+<br>
+
 ## 🛠 Tecnologías utilizadas
 
 - Java 23
@@ -70,6 +78,7 @@ El sistema incluye dos usuarios preconfigurados para facilitar las pruebas y el 
 - MySQL
 - Maven
 - Dotenv para manejo de variables de entorno
+- Addons Clever Cloud (Base de datos en la nube)
 
 <br>
 
