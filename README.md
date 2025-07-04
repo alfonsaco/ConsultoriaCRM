@@ -1,6 +1,6 @@
 # 📊 CRM
 
-**CRM** desarrollado en Java con JavaFX y MySQL, realizado en grupo durante las prácticas de DAM. Permite gestionar usuarios, clientes y tareas con una interfaz sencilla y funcional. El proyecto es educativo y demostrativo, sin referencias a empresas reales, y muestra las habilidades adquiridas en programación y bases de datos.
+**CRM** desarrollado en Java con JavaFX y MySQL, realizado junto con un compañeros durante las prácticas de DAM. Permite gestionar usuarios, clientes y tareas con una interfaz sencilla y funcional. El proyecto es educativo y demostrativo, sin referencias a empresas reales, y muestra las habilidades adquiridas en programación y bases de datos.
 
 <br>
 
@@ -37,6 +37,9 @@ CLAVE_ENCRIPT=1234567891234567
 La clave del encriptado debe ser **1234567891234567**.
 
 5. Abre el proyecto en tu IDE (Ej: IntelliJ) y ejecuta la aplicación.
+
+⚠ ADDONS NO AGUANTA MÁS DE 5 CONEXIONES A LA VEZ ⚠
+Cuando pasas más de unos minutos sin realizar ninguna acción en la aplicación, la base de datos se cierra automaticamente y hay que reiniciar la App. Esto se debe a que se ha utilizado **Addons Clever Cloud** para realizarla, la cual tiene esta limitación.
 
 <br>
 
