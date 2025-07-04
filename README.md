@@ -63,16 +63,16 @@ El sistema incluye dos usuarios preconfigurados para facilitar las pruebas y el 
 <br>
 
 ## 🖼 Capturas
-<div >
-  <img src="https://github.com/alfonsaco/ConsultoriaCRM/blob/main/src/main/resources/images/CAP1%20(1).PNG" alt="Captura" width="350px">
-  <img src="https://github.com/alfonsaco/ConsultoriaCRM/blob/main/src/main/resources/images/CAP1%20(2).PNG" alt="Captura" width="350px">
-</div>
-<div>
-  <img src="https://github.com/alfonsaco/ConsultoriaCRM/blob/main/src/main/resources/images/CAP1%20(3).PNG" alt="Captura" width="350px">
-  <img src="https://github.com/alfonsaco/ConsultoriaCRM/blob/main/src/main/resources/images/CAP1%20(4).PNG" alt="Captura" width="350px">
+<div align="center">
+  <img src="https://github.com/alfonsaco/ConsultoriaCRM/blob/main/src/main/resources/images/CAP1%20(1).PNG" alt="Captura" width="400px">
+  <img src="https://github.com/alfonsaco/ConsultoriaCRM/blob/main/src/main/resources/images/CAP1%20(2).PNG" alt="Captura" width="400px">
 </div>
 <div align="center">
-  <img src="https://github.com/alfonsaco/ConsultoriaCRM/blob/main/src/main/resources/images/CAP1%20(5).PNG" alt="Captura" width="350px">
+  <img src="https://github.com/alfonsaco/ConsultoriaCRM/blob/main/src/main/resources/images/CAP1%20(3).PNG" alt="Captura" width="400px">
+  <img src="https://github.com/alfonsaco/ConsultoriaCRM/blob/main/src/main/resources/images/CAP1%20(4).PNG" alt="Captura" width="400px">
+</div>
+<div align="center">
+  <img src="https://github.com/alfonsaco/ConsultoriaCRM/blob/main/src/main/resources/images/CAP1%20(5).PNG" alt="Captura" width="400px">
 </div>
 
 <br>
