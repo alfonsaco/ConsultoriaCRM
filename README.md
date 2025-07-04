@@ -7,8 +7,13 @@
 ## ⚙️ Funcionalidades
 
 El CRM permite:
-
+- Agregar clientes, junto con sus CUPS y direcciones de sumistro de Gas, Luz, Telefonía, Internet y Alarmas. Se permiten agregar varias direcciones por clientes.
 - Gestión de usuarios con diferentes roles y permisos.
+- Calendario para crear tareas para los ténicos
+- Pestaña que muestra las renovaciones de los clientes
+- Listado general con todos los clientes y sus datos, para mostrarlo de una forma más ordenada
+- Sección de admin para añadir nuevos colaboradores y usuarios
+- Sección para añadir nuevos empleados
 
 <br>
 
@@ -44,6 +49,8 @@ La clave del encriptado debe ser **1234567891234567**.
 > Cuando pasas más de unos minutos sin realizar ninguna acción en la aplicación, la base de datos se cierra automáticamente y hay que reiniciar la App.  
 > Esto se debe a que se ha utilizado **Addons Clever Cloud** para realizarla, la cual tiene esta limitación.
 
+
+<br>
 
 ## 🙍‍♂️ Usuarios por defecto
 
