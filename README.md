@@ -40,10 +40,8 @@ La clave del encriptado debe ser **1234567891234567**.
 
 <br>
 
-<div style="text-align: center;">
-  ⚠ ADDONS NO AGUANTA MÁS DE 5 CONEXIONES A LA VEZ ⚠ <br>
-  Cuando pasas más de unos minutos sin realizar ninguna acción en la aplicación, la base de datos se cierra automaticamente y hay que reiniciar la App. Esto se debe a que se ha utilizado <strong>Addons Clever Cloud</strong> para realizarla, la cual tiene esta limitación.
-</div>
+|⚠ ADDONS NO AGUANTA MÁS DE 5 CONEXIONES A LA VEZ ⚠ <br>|
+|Cuando pasas más de unos minutos sin realizar ninguna acción en la aplicación, la base de datos se cierra automaticamente y hay que reiniciar la App. Esto se debe a que se ha utilizado <strong>Addons Clever Cloud</strong> para realizarla, la cual tiene esta limitación.|
 <br>
 
 ## 🙍‍♂️ Usuarios por defecto
